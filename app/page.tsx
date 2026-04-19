@@ -3,25 +3,25 @@ export default function Home() {
     <main className="bg-[#F5F1E8] text-[#1C1C1C]">
 
       {/* HERO */}
-      <section className="h-screen flex items-center justify-center bg-[url('/images/hero.jpg')] bg-cover bg-center relative">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative text-center text-white px-6">
-          <h1 className="text-5xl md:text-6xl font-serif mb-6">
-            Light, Crafted by Nature
-          </h1>
-          <p className="max-w-xl mx-auto mb-8 text-lg">
-            Timeless stained glass creations, thoughtful restorations, and hands-on workshops that bring warmth, colour, and story into your world.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <button className="bg-[#D4A017] text-black px-6 py-3 rounded-xl">
-              Explore Commissions
-            </button>
-            <button className="border border-white px-6 py-3 rounded-xl">
-              View Workshops
-            </button>
-          </div>
-        </div>
-      </section>
+<section className="min-h-screen flex items-center justify-center bg-[#1C1C1C] text-white px-6 py-20">
+  <div className="text-center max-w-3xl mx-auto">
+
+    <img
+      src="/images/hero.png"
+      alt="Luminous By Nature logo"
+      className="mx-auto mb-8 max-h-[60vh] object-contain"
+    />
+
+    <h1 className="text-4xl md:text-5xl font-serif mb-4 leading-tight">
+      Light, Crafted by Nature
+    </h1>
+
+    <p className="text-lg md:text-xl text-gray-300">
+      Timeless stained glass creations, thoughtful restorations, and hands-on workshops that bring warmth, colour, and story into your world.
+    </p>
+
+  </div>
+</section>
 
       {/* SERVICES */}
       <section className="py-20 px-6 text-center">
@@ -51,15 +51,15 @@ export default function Home() {
         <p className="mb-10">Each piece carries its own story, shaped by hand and illuminated by light.</p>
 
         <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-          <img src="/images/glass1.jpg" className="h-60 w-full object-cover rounded-xl" />
-          <img src="/images/glass2.jpg" className="h-60 w-full object-cover rounded-xl" />
-          <img src="/images/glass3.jpg" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass1.jpeg" alt="Stained glass piece 1" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass2.jpg" alt="Stained glass piece 2" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass3.jpg" alt="Stained glass piece 3" className="h-60 w-full object-cover rounded-xl" />
         </div>
       </section>
 
       {/* STORY */}
       <section className="py-20 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <img src="/images/studio.jpg" className="h-80 w-full object-cover rounded-xl" />
+        <img src="/images/studio.jpg" alt="Stained glass studio" className="h-80 w-full object-cover rounded-xl" />
         <div>
           <h2 className="text-3xl font-serif mb-4">Our Craft</h2>
           <p>
