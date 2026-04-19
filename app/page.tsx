@@ -3,7 +3,7 @@ export default function Home() {
     <main className="bg-[#F5F1E8] text-[#1C1C1C]">
 
       {/* HERO */}
-      <section className="h-screen flex items-center justify-center bg-[url('/hero.jpg')] bg-cover bg-center relative">
+      <section className="h-screen flex items-center justify-center bg-[url('/images/hero.jpg')] bg-cover bg-center relative">
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative text-center text-white px-6">
           <h1 className="text-5xl md:text-6xl font-serif mb-6">
@@ -51,15 +51,15 @@ export default function Home() {
         <p className="mb-10">Each piece carries its own story, shaped by hand and illuminated by light.</p>
 
         <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-          <div className="h-60 bg-gray-300"></div>
-          <div className="h-60 bg-gray-400"></div>
-          <div className="h-60 bg-gray-500"></div>
+          <img src="/images/glass1.jpg" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass2.jpg" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass3.jpg" className="h-60 w-full object-cover rounded-xl" />
         </div>
       </section>
 
       {/* STORY */}
       <section className="py-20 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <div className="h-80 bg-gray-300"></div>
+        <img src="/images/studio.jpg" className="h-80 w-full object-cover rounded-xl" />
         <div>
           <h2 className="text-3xl font-serif mb-4">Our Craft</h2>
           <p>
