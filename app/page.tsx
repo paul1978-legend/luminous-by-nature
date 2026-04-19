@@ -3,25 +3,25 @@ export default function Home() {
     <main className="bg-[#F5F1E8] text-[#1C1C1C]">
 
       {/* HERO */}
-<section className="min-h-screen flex items-center justify-center bg-[#1C1C1C] text-white px-6 py-20">
-  <div className="text-center max-w-3xl mx-auto">
+      <section className="min-h-screen flex items-center justify-center bg-[#1C1C1C] text-white px-6 py-20">
+        <div className="text-center max-w-3xl mx-auto">
 
-    <img
-      src="/images/hero.png"
-      alt="Luminous By Nature logo"
-      className="mx-auto mb-8 max-h-[60vh] object-contain"
-    />
+          <img
+            src="/images/hero.png"
+            alt="Luminous By Nature logo"
+            className="mx-auto mb-8 max-h-[60vh] object-contain"
+          />
 
-    <h1 className="text-4xl md:text-5xl font-serif mb-4 leading-tight">
-      Light, Crafted by Nature
-    </h1>
+          <h1 className="text-4xl md:text-5xl font-serif mb-4 leading-tight">
+            Light, Crafted by Nature
+          </h1>
 
-    <p className="text-lg md:text-xl text-gray-300">
-      Timeless stained glass creations, thoughtful restorations, and hands-on workshops that bring warmth, colour, and story into your world.
-    </p>
+          <p className="text-lg md:text-xl text-gray-300">
+            Timeless stained glass creations, thoughtful restorations, and hands-on workshops that bring warmth, colour, and story into your world.
+          </p>
 
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* SERVICES */}
       <section className="py-20 px-6 text-center">
@@ -51,15 +51,15 @@ export default function Home() {
         <p className="mb-10">Each piece carries its own story, shaped by hand and illuminated by light.</p>
 
         <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
-          <img src="/images/glass1.jpeg" alt="Stained glass piece 1" className="h-60 w-full object-cover rounded-xl" />
-          <img src="/images/glass2.jpg" alt="Stained glass piece 2" className="h-60 w-full object-cover rounded-xl" />
-          <img src="/images/glass3.jpg" alt="Stained glass piece 3" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass1.jpeg" alt="Glass piece 1" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass2.jpg" alt="Glass piece 2" className="h-60 w-full object-cover rounded-xl" />
+          <img src="/images/glass3.jpg" alt="Glass piece 3" className="h-60 w-full object-cover rounded-xl" />
         </div>
       </section>
 
       {/* STORY */}
       <section className="py-20 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <img src="/images/studio.jpg" alt="Stained glass studio" className="h-80 w-full object-cover rounded-xl" />
+        <img src="/images/studio.jpg" alt="Studio" className="h-80 w-full object-cover rounded-xl" />
         <div>
           <h2 className="text-3xl font-serif mb-4">Our Craft</h2>
           <p>
@@ -67,18 +67,6 @@ export default function Home() {
             Each piece is created with intention, patience, and an understanding that light is more than illumination… it is atmosphere, memory, and presence.
           </p>
         </div>
-      </section>
-
-      {/* NEWSLETTER */}
-      <section className="py-20 px-6 text-center bg-[#1C1C1C] text-white">
-        <h2 className="text-3xl font-serif mb-4">Stay Connected</h2>
-        <p className="mb-6">Be the first to see new creations, workshops, and releases.</p>
-
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="px-4 py-3 rounded-xl text-black w-64"
-        />
       </section>
 
       {/* FOOTER */}
