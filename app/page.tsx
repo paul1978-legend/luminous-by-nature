@@ -24,23 +24,29 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-20 px-6 text-center">
-        <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+      <section className="py-20 px-6">
+        <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto text-center">
 
-          <div>
-            <h3 className="text-2xl font-serif mb-4">Commissions</h3>
-            <p>Bespoke stained glass pieces designed to reflect your space, your story, and your light.</p>
-          </div>
+          <a href="/commissions" className="p-6 rounded-xl hover:bg-[#EAE3D6] transition">
+            <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">Commissions</h3>
+            <p>
+              Bespoke stained glass pieces designed to reflect your space and story.
+            </p>
+          </a>
 
-          <div>
-            <h3 className="text-2xl font-serif mb-4">Repairs</h3>
-            <p>Restore the beauty and integrity of cherished stained glass with care and craftsmanship.</p>
-          </div>
+          <a href="/repairs" className="p-6 rounded-xl hover:bg-[#EAE3D6] transition">
+            <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">Repairs</h3>
+            <p>
+              Restore and preserve your stained glass with expert craftsmanship.
+            </p>
+          </a>
 
-          <div>
-            <h3 className="text-2xl font-serif mb-4">Workshops</h3>
-            <p>Step into the craft and create your own piece in a guided, hands-on experience.</p>
-          </div>
+          <a href="/workshops" className="p-6 rounded-xl hover:bg-[#EAE3D6] transition">
+            <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">Workshops</h3>
+            <p>
+              Learn the craft and create your own stained glass piece.
+            </p>
+          </a>
 
         </div>
       </section>

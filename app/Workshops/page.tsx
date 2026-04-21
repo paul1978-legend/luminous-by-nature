@@ -1,7 +1,11 @@
 export default function Workshops() {
   return (
-    <main className="min-h-screen bg-[#F5F1E8] text-[#1C1C1C] p-10">
-      <h1 className="text-4xl font-serif mb-6 text-center">Workshops</h1>
+    <main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20 text-center">
+
+      <h1 className="text-4xl font-serif mb-6">Workshops</h1>
+      <p className="mb-10">
+        Join us for a hands-on stained glass experience.
+      </p>
 
       <div
         dangerouslySetInnerHTML={{
@@ -11,6 +15,7 @@ export default function Workshops() {
           `,
         }}
       />
+
     </main>
   );
 }
