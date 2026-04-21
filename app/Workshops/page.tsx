@@ -12,7 +12,7 @@ export default function Workshops() {
 
       <div className="max-w-5xl mx-auto">
         <iframe
-          src="https://classbento.com.au/9qcw2228p4au-widget?wtn=9qcw2228p4au&is_preview=1"
+          src="https://classbento.com.au/9qcw2228p4au-date-widget?wtn=9qcw2228p4au&is_preview=1"
           style={{ width: "100%", height: "1400px", border: "none" }}
         />
       </div>

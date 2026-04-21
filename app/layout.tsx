@@ -30,16 +30,17 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* Google AdSense */}
+
+        {/* ✅ AdSense (correct placement) */}
         <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXX"
-          crossOrigin="anonymous"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4964811819591438"
           strategy="afterInteractive"
+          crossOrigin="anonymous"
         />
 
         <Navbar />
         {children}
+
       </body>
     </html>
   );
