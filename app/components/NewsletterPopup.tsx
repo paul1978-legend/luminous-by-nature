@@ -15,7 +15,7 @@ if(!dismissed){
 
 const timer=setTimeout(()=>{
 setOpen(true);
-},5000);
+},12000);
 
 return ()=>clearTimeout(timer);
 
