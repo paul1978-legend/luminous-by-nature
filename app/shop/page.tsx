@@ -1,30 +1,27 @@
-export default function Shop() {
+export default function Collection() {
   return (
     <main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20">
 
-      {/* HERO */}
       <section className="text-center max-w-4xl mx-auto mb-24">
 
         <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-        <h1 className="text-5xl font-serif tracking-wide mb-6">
-          Shop the Collection
+        <h1 className="text-5xl font-serif mb-6">
+          Shop Collection
         </h1>
 
-        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
-          Original stained glass artworks, gift vouchers,
-          and special studio offerings.
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          A curated collection of stained glass works,
+          gift offerings and limited releases
+          is coming soon.
         </p>
 
       </section>
 
 
-      {/* PRODUCTS */}
-      <section className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <section className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-24">
 
-        {/* PRODUCT 1 */}
         <div className="bg-white rounded-2xl shadow-md p-6 text-center">
-
           <img
             src="/images/glass1.jpeg"
             className="glow rounded-xl h-72 w-full object-cover mb-6"
@@ -32,31 +29,18 @@ export default function Shop() {
           />
 
           <h3 className="text-2xl font-serif mb-3">
-            Botanical Panel
+            Original Artworks
           </h3>
 
-          <p className="text-gray-600 mb-4">
-            Original handcrafted stained glass artwork.
+          <p className="text-gray-600">
+            One-of-a-kind stained glass pieces
+            launching soon.
           </p>
-
-          <p className="text-xl mb-6">
-            $495
-          </p>
-
-          <a
-            href="YOUR_STRIPE_LINK"
-            target="_blank"
-            className="btn-primary"
-          >
-            Buy Now
-          </a>
-
         </div>
 
 
-        {/* PRODUCT 2 */}
-        <div className="bg-white rounded-2xl shadow-md p-6 text-center">
 
+        <div className="bg-white rounded-2xl shadow-md p-6 text-center">
           <img
             src="/images/glass2.jpg"
             className="glow rounded-xl h-72 w-full object-cover mb-6"
@@ -64,31 +48,18 @@ export default function Shop() {
           />
 
           <h3 className="text-2xl font-serif mb-3">
-            Sun Catcher Piece
+            Gift Vouchers
           </h3>
 
-          <p className="text-gray-600 mb-4">
-            Limited handcrafted artwork.
+          <p className="text-gray-600">
+            Workshop and custom piece gift options
+            arriving soon.
           </p>
-
-          <p className="text-xl mb-6">
-            $325
-          </p>
-
-          <a
-            href="YOUR_STRIPE_LINK"
-            target="_blank"
-            className="btn-primary"
-          >
-            Buy Now
-          </a>
-
         </div>
 
 
-        {/* PRODUCT 3 */}
-        <div className="bg-white rounded-2xl shadow-md p-6 text-center">
 
+        <div className="bg-white rounded-2xl shadow-md p-6 text-center">
           <img
             src="/images/glass3.jpg"
             className="glow rounded-xl h-72 w-full object-cover mb-6"
@@ -96,50 +67,34 @@ export default function Shop() {
           />
 
           <h3 className="text-2xl font-serif mb-3">
-            Workshop Gift Voucher
+            Limited Releases
           </h3>
 
-          <p className="text-gray-600 mb-4">
-            Give a creative experience.
+          <p className="text-gray-600">
+            Seasonal pieces and collector drops.
           </p>
-
-          <p className="text-xl mb-6">
-            $220
-          </p>
-
-          <a
-            href="YOUR_STRIPE_LINK"
-            target="_blank"
-            className="btn-primary"
-          >
-            Buy Gift
-          </a>
-
         </div>
 
       </section>
 
 
 
-      {/* COMMISSION DEPOSIT */}
-      <section className="py-24 text-center">
-
-        <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+      <section className="text-center py-20 bg-[#EFE7D8] rounded-3xl max-w-5xl mx-auto">
 
         <h2 className="text-4xl font-serif mb-6">
-          Reserve a Commission
+          Want First Access?
         </h2>
 
         <p className="max-w-xl mx-auto mb-8 text-gray-700">
-          Secure a custom design consultation
-          with a commission deposit.
+          Join the newsletter and be first to know
+          when the collection opens.
         </p>
 
         <a
-          href="YOUR_STRIPE_DEPOSIT_LINK"
+          href="/contact"
           className="btn-primary"
         >
-          Reserve Your Commission
+          Enquire About Available Pieces
         </a>
 
       </section>
