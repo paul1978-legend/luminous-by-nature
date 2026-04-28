@@ -6,46 +6,60 @@ import NewsletterPopup from "./components/NewsletterPopup";
 import Script from "next/script";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable:"--font-geist-sans",
+  subsets:["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable:"--font-geist-mono",
+  subsets:["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Luminous By Nature",
-  description: "Stained glass creations, repairs and workshops",
+title:"Luminous By Nature | Stained Glass Sunshine Coast",
+
+description:
+"Custom stained glass commissions, leadlight repairs and stained glass workshops across Sunshine Coast, Brisbane and South East Queensland.",
+
+keywords:[
+"stained glass Sunshine Coast",
+"stained glass Brisbane",
+"leadlight repairs Queensland",
+"stained glass workshops",
+"custom stained glass commissions",
+"Sunshine Coast artist"
+],
 };
 
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+children,
+}:{
+children:React.ReactNode;
+}){
 
-        {/* Google AdSense */}
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4964811819591438"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
+return(
+<html
+lang="en"
+className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+>
 
-        <Navbar />
+<body className="min-h-full flex flex-col">
 
-        <NewsletterPopup />
+<Script
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4964811819591438"
+strategy="afterInteractive"
+crossOrigin="anonymous"
+/>
 
-        {children}
+<Navbar />
 
-      </body>
-    </html>
-  );
+<NewsletterPopup />
+
+{children}
+
+</body>
+
+</html>
+);
+
 }

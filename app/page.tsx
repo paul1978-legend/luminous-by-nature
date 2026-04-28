@@ -10,7 +10,7 @@ export default function Home() {
 
             <img
               src="/images/hero.png"
-              alt="Luminous By Nature logo"
+              alt="Luminous By Nature stained glass Sunshine Coast"
               className="mx-auto mb-8 max-h-[60vh] object-contain"
             />
 
@@ -73,7 +73,7 @@ export default function Home() {
               </h3>
 
               <p className="leading-relaxed">
-                Bespoke stained glass pieces designed to reflect your space and story.
+                Custom stained glass commissions for homes, interiors and sacred spaces across Sunshine Coast and Brisbane.
               </p>
 
             </a>
@@ -116,7 +116,7 @@ export default function Home() {
 
           <img
             src="/images/studio.jpg"
-            alt="Studio"
+            alt="Traditional stained glass studio Sunshine Coast"
             className="glow rounded-xl h-96 w-full object-cover"
           />
 
@@ -164,19 +164,19 @@ export default function Home() {
             <img
               src="/images/glass1.jpeg"
               className="glow rounded-xl h-72 w-full object-cover mt-6"
-              alt=""
+              alt="Handcrafted stained glass artwork Sunshine Coast"
             />
 
             <img
               src="/images/glass2.jpg"
               className="glow rounded-xl h-72 w-full object-cover"
-              alt=""
+              alt="Traditional stained glass repair work Queensland"
             />
 
             <img
               src="/images/glass3.jpg"
               className="glow rounded-xl h-72 w-full object-cover mt-10"
-              alt=""
+              alt="Custom leadlight stained glass commission Queensland"
             />
 
           </div>

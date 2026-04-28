@@ -12,7 +12,7 @@ export default function Navbar() {
       </Link>
 
 
-      <div className="flex gap-6 text-sm items-center">
+      <div className="flex gap-8 text-sm items-center">
 
         <Link
           href="/commissions"
