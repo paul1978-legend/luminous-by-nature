@@ -23,7 +23,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto">
               Timeless stained glass creations, thoughtful restorations,
               and hands-on workshops that bring warmth, colour,
-              and story into your world.
+              and story into your world. Handcrafted stained glass artist based on the Sunshine Coast, serving Brisbane and beyond.
             </p>
 
             {/* CTA */}

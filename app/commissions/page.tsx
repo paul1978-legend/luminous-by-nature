@@ -1,4 +1,8 @@
-"use client";
+export const metadata = {
+title:"Custom Stained Glass Commissions",
+description:
+"Bespoke stained glass commissions for homes and sacred spaces."
+};
 
 export default function Commissions() {
   return (
@@ -20,13 +24,19 @@ export default function Commissions() {
         {/* GALLERY */}
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-20">
 
-          <img src="/images/glass1.jpeg"
+          <img
+          src="/images/glass1.jpeg"
+          alt="Custom stained glass commission artwork"
             className="glow rounded-xl h-72 w-full object-cover transition duration-500 hover:scale-105 hover:shadow-xl" />
 
-          <img src="/images/glass2.jpg"
+          <img
+          src="/images/glass2.jpg"
+          alt="Custom stained glass commission artwork"
             className="glow rounded-xl h-72 w-full object-cover transition duration-500 hover:scale-105 hover:shadow-xl" />
 
-          <img src="/images/glass3.jpg"
+          <img
+          src="/images/glass3.jpg"
+          alt="Custom stained glass commission artwork"
             className="glow rounded-xl h-72 w-full object-cover transition duration-500 hover:scale-105 hover:shadow-xl" />
 
         </div>
