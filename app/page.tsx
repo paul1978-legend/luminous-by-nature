@@ -23,11 +23,14 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto">
               Timeless stained glass creations, thoughtful restorations,
               and hands-on workshops that bring warmth, colour,
-              and story into your world. Handcrafted stained glass artist based on the Sunshine Coast, serving Brisbane and beyond.
+              and story into your world.
+
+              Handcrafted stained glass artist based on the Sunshine Coast,
+              serving Brisbane and beyond.
             </p>
 
-            {/* CTA */}
             <div className="mt-8 flex gap-4 justify-center">
+
               <a
                 href="/commissions"
                 className="btn-primary"
@@ -41,6 +44,7 @@ export default function Home() {
               >
                 View Workshops
               </a>
+
             </div>
 
           </div>
@@ -48,53 +52,67 @@ export default function Home() {
         </section>
 
 
-        {/* SERVICES */}
+
+        {/* STUDIO OFFERINGS */}
         <section className="py-24 px-6 bg-[#EFE7D8]">
 
           <div className="text-center mb-16">
+
             <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
             <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-4">
-              What We Offer
+              Studio Offerings
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
               Crafted commissions, thoughtful restoration and immersive workshops.
             </p>
+
           </div>
+
 
           <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto text-center">
 
-            <a href="/commissions"
-              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md">
+            <a
+              href="/commissions"
+              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md"
+            >
 
               <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">
                 Commissions
               </h3>
 
               <p className="leading-relaxed">
-                Custom stained glass commissions for homes, interiors and sacred spaces across Sunshine Coast and Brisbane.
+                Custom stained glass commissions for homes,
+                interiors and sacred spaces across Sunshine Coast and Brisbane.
               </p>
 
             </a>
 
 
-            <a href="/repairs"
-              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md">
+
+            <a
+              href="/repairs"
+              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md"
+            >
 
               <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">
                 Repairs
               </h3>
 
               <p className="leading-relaxed">
-                Restore and preserve treasured stained glass with expert craftsmanship.
+                Restore and preserve treasured stained glass
+                with expert craftsmanship.
               </p>
 
             </a>
 
 
-            <a href="/workshops"
-              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md">
+
+            <a
+              href="/workshops"
+              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md"
+            >
 
               <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">
                 Workshops
@@ -111,7 +129,8 @@ export default function Home() {
         </section>
 
 
-        {/* STORY */}
+
+        {/* OUR CRAFT */}
         <section className="py-24 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-14 items-center">
 
           <img
@@ -129,10 +148,12 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Luminous By Nature is rooted in a deep respect for traditional
-              stained glass craftsmanship. Each piece is created with intention,
-              patience and the understanding that light is atmosphere,
-              memory and presence.
+              Luminous By Nature is rooted in a deep respect
+              for traditional stained glass craftsmanship.
+
+              Each piece is created with intention,
+              patience and the understanding that light is
+              atmosphere, memory and presence.
             </p>
 
             <p className="mt-6 italic text-lg text-gray-700">
@@ -145,39 +166,56 @@ export default function Home() {
 
 
 
-        {/* GALLERY */}
+        {/* SELECTED WORKS LIGHTBOX */}
         <section className="py-24 px-6 bg-[#EAE3D6] text-center">
 
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
           <h2 className="text-4xl font-serif tracking-wide mb-4">
-            Crafted Pieces
+            Selected Works
           </h2>
 
-          <p className="text-lg text-gray-700 leading-relaxed mb-16 max-w-2xl mx-auto">
-            Each piece carries its own story, shaped by hand and illuminated by light.
+          <p className="mb-16 max-w-2xl mx-auto text-lg text-gray-700">
+            Click a piece to explore details.
           </p>
 
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-            <img
-              src="/images/glass1.jpeg"
-              className="glow rounded-xl h-72 w-full object-cover mt-6"
-              alt="Handcrafted stained glass artwork Sunshine Coast"
-            />
+            <a
+              href="/images/glass1.jpeg"
+              target="_blank"
+            >
+              <img
+                src="/images/glass1.jpeg"
+                alt="Handcrafted stained glass artwork Sunshine Coast"
+                className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
+              />
+            </a>
 
-            <img
-              src="/images/glass2.jpg"
-              className="glow rounded-xl h-72 w-full object-cover"
-              alt="Traditional stained glass repair work Queensland"
-            />
 
-            <img
-              src="/images/glass3.jpg"
-              className="glow rounded-xl h-72 w-full object-cover mt-10"
-              alt="Custom leadlight stained glass commission Queensland"
-            />
+            <a
+              href="/images/glass2.jpg"
+              target="_blank"
+            >
+              <img
+                src="/images/glass2.jpg"
+                alt="Traditional stained glass repair work Queensland"
+                className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
+              />
+            </a>
+
+
+            <a
+              href="/images/glass3.jpg"
+              target="_blank"
+            >
+              <img
+                src="/images/glass3.jpg"
+                alt="Custom leadlight stained glass commission Queensland"
+                className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
+              />
+            </a>
 
           </div>
 
@@ -185,78 +223,134 @@ export default function Home() {
 
 
 
-        {/* TESTIMONIAL PREVIEW */}
-        <section className="py-24 px-6 text-center">
+        {/* TESTIMONIALS */}
+        <section className="py-24 px-6 bg-[#F8F4EC] text-center">
 
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-          <h2 className="text-4xl font-serif tracking-wide mb-10">
+          <h2 className="text-4xl font-serif tracking-wide mb-12">
             Collected Kind Words
           </h2>
 
-          <div className="space-y-8 max-w-3xl mx-auto">
-            <p className="italic text-lg text-gray-700">
-              “Absolutely stunning craftsmanship.”
-            </p>
 
-            <p className="italic text-lg text-gray-700">
-              “An unforgettable workshop experience.”
-            </p>
+          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-            <p className="italic text-lg text-gray-700">
-              “Beautiful artistry and wonderful guidance.”
-            </p>
+            <div className="bg-white rounded-2xl shadow-md p-8">
+
+              <div className="text-[#D4A017] text-xl mb-4">
+                ★★★★★
+              </div>
+
+              <p className="italic mb-4">
+                “Absolutely stunning craftsmanship.
+                Our home feels transformed.”
+              </p>
+
+              <p className="text-sm text-gray-500">
+                Google Review
+              </p>
+
+            </div>
+
+
+
+            <div className="bg-white rounded-2xl shadow-md p-8">
+
+              <div className="text-[#D4A017] text-xl mb-4">
+                ★★★★★
+              </div>
+
+              <p className="italic mb-4">
+                “An unforgettable workshop
+                experience.”
+              </p>
+
+              <p className="text-sm text-gray-500">
+                ClassBento Review
+              </p>
+
+            </div>
+
+
+
+            <div className="bg-white rounded-2xl shadow-md p-8">
+
+              <div className="text-[#D4A017] text-xl mb-4">
+                ★★★★★
+              </div>
+
+              <p className="italic mb-4">
+                “Beautiful artistry and
+                wonderful guidance.”
+              </p>
+
+              <p className="text-sm text-gray-500">
+                Client Review
+              </p>
+
+            </div>
+
           </div>
+
+
+          <p className="mt-10 italic text-lg text-gray-700">
+            Trusted across Sunshine Coast,
+            Brisbane and beyond.
+          </p>
 
         </section>
 
 
-        {/* NEWSLETTER SIGNUP */}
-<section className="py-24 text-center bg-[#EFE7D8]">
 
-  <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+        {/* NEWSLETTER */}
+        <section className="py-24 text-center bg-[#EFE7D8]">
 
-  <h2 className="text-4xl font-serif tracking-wide mb-4">
-    Join Our Mailing List
-  </h2>
+          <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-  <p className="text-lg text-gray-700 max-w-xl mx-auto mb-8 leading-relaxed">
-    Receive workshop releases, new stained glass works,
-    studio news and occasional sparks of inspiration.
-  </p>
+          <h2 className="text-4xl font-serif tracking-wide mb-4">
+            Join Our Mailing List
+          </h2>
 
-  <form
-    action="https://formspree.io/f/xlgaalob"
-    method="POST"
-    className="max-w-md mx-auto flex flex-col md:flex-row gap-4"
-  >
+          <p className="text-lg text-gray-700 max-w-xl mx-auto mb-8 leading-relaxed">
+            Receive workshop releases,
+            new stained glass works,
+            studio news and sparks of inspiration.
+          </p>
 
-    <input
-      type="email"
-      name="email"
-      required
-      placeholder="Your Email"
-      className="flex-1 p-3 rounded-xl border"
-    />
 
-    <input
-      type="hidden"
-      name="enquiryType"
-      value="Newsletter Signup"
-    />
+          <form
+            action="https://formspree.io/f/xlgaalob"
+            method="POST"
+            className="max-w-md mx-auto flex flex-col md:flex-row gap-4"
+          >
 
-    <button className="btn-primary">
-      Subscribe
-    </button>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Your Email"
+              className="flex-1 p-3 rounded-xl border"
+            />
 
-  </form>
+            <input
+              type="hidden"
+              name="enquiryType"
+              value="Newsletter Signup"
+            />
 
-</section>
+            <button className="btn-primary">
+              Subscribe
+            </button>
+
+          </form>
+
+        </section>
 
 
 
         {/* FOOTER */}
         <footer className="py-12 text-center text-sm bg-[#EAE3D6]">
+
           <p className="mb-2">
             luminousbynature.com.au@gmail.com
           </p>
@@ -268,9 +362,11 @@ export default function Home() {
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} Luminous By Nature
           </p>
+
         </footer>
 
       </main>
+
 
 
       {/* FLOATING ENQUIRE BUTTON */}
