@@ -191,7 +191,7 @@ export default function Home() {
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
           <h2 className="text-4xl font-serif tracking-wide mb-10">
-            Kind Words
+            Collected Kind Words
           </h2>
 
           <div className="space-y-8 max-w-3xl mx-auto">
