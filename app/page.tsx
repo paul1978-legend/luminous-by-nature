@@ -1,3 +1,5 @@
+import LightboxGallery from "./components/Lightbox";
+
 export default function Home() {
   return (
     <>
@@ -5,7 +7,6 @@ export default function Home() {
 
         {/* HERO */}
         <section className="min-h-screen flex items-center justify-center bg-[#1C1C1C] text-white px-6 py-24">
-
           <div className="text-center max-w-3xl mx-auto fade-in">
 
             <img
@@ -22,19 +23,11 @@ export default function Home() {
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl mx-auto">
               Timeless stained glass creations, thoughtful restorations,
-              and hands-on workshops that bring warmth, colour,
-              and story into your world.
-
-              Handcrafted stained glass artist based on the Sunshine Coast,
-              serving Brisbane and beyond.
+              and hands-on workshops that bring warmth, colour and story into your world.
             </p>
 
             <div className="mt-8 flex gap-4 justify-center">
-
-              <a
-                href="/commissions"
-                className="btn-primary"
-              >
+              <a href="/commissions" className="btn-primary">
                 Commission a Piece
               </a>
 
@@ -44,84 +37,44 @@ export default function Home() {
               >
                 View Workshops
               </a>
-
             </div>
 
           </div>
-
         </section>
 
 
 
         {/* STUDIO OFFERINGS */}
-        <section className="py-24 px-6 bg-[#EFE7D8]">
+        <section className="py-24 px-6 bg-[#EFE7D8] text-center">
 
-          <div className="text-center mb-16">
+          <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-            <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+          <h2 className="text-4xl font-serif mb-12">
+            Studio Offerings
+          </h2>
 
-            <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-4">
-              Studio Offerings
-            </h2>
+          <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
 
-            <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
-              Crafted commissions, thoughtful restoration and immersive workshops.
-            </p>
-
-          </div>
-
-
-          <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto text-center">
-
-            <a
-              href="/commissions"
-              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md"
-            >
-
-              <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">
-                Commissions
-              </h3>
-
-              <p className="leading-relaxed">
+            <a href="/commissions" className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md">
+              <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">Commissions</h3>
+              <p>
                 Custom stained glass commissions for homes,
                 interiors and sacred spaces across Sunshine Coast and Brisbane.
               </p>
-
             </a>
 
-
-
-            <a
-              href="/repairs"
-              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md"
-            >
-
-              <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">
-                Repairs
-              </h3>
-
-              <p className="leading-relaxed">
-                Restore and preserve treasured stained glass
-                with expert craftsmanship.
+            <a href="/repairs" className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md">
+              <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">Repairs</h3>
+              <p>
+                Restore and preserve treasured stained glass with expert craftsmanship.
               </p>
-
             </a>
 
-
-
-            <a
-              href="/workshops"
-              className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md"
-            >
-
-              <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">
-                Workshops
-              </h3>
-
-              <p className="leading-relaxed">
+            <a href="/workshops" className="p-8 rounded-xl hover:bg-[#F5F1E8] transition shadow-sm hover:shadow-md">
+              <h3 className="text-2xl font-serif mb-4 hover:text-[#D4A017]">Workshops</h3>
+              <p>
                 Learn the craft and create your own stained glass piece.
               </p>
-
             </a>
 
           </div>
@@ -143,17 +96,13 @@ export default function Home() {
 
             <div className="w-12 h-[2px] bg-[#D4A017] mb-6"></div>
 
-            <h2 className="text-4xl font-serif tracking-wide mb-6">
+            <h2 className="text-4xl font-serif mb-6">
               Our Craft
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Luminous By Nature is rooted in a deep respect
-              for traditional stained glass craftsmanship.
-
-              Each piece is created with intention,
-              patience and the understanding that light is
-              atmosphere, memory and presence.
+              Luminous By Nature is rooted in traditional stained glass craftsmanship.
+              Each piece is created with intention, patience and deep respect for light.
             </p>
 
             <p className="mt-6 italic text-lg text-gray-700">
@@ -166,58 +115,20 @@ export default function Home() {
 
 
 
-        {/* SELECTED WORKS LIGHTBOX */}
+        {/* LIGHTBOX GALLERY */}
         <section className="py-24 px-6 bg-[#EAE3D6] text-center">
 
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-          <h2 className="text-4xl font-serif tracking-wide mb-4">
+          <h2 className="text-4xl font-serif mb-4">
             Selected Works
           </h2>
 
-          <p className="mb-16 max-w-2xl mx-auto text-lg text-gray-700">
-            Click a piece to explore details.
+          <p className="mb-16 text-gray-700">
+            Click a piece to explore.
           </p>
 
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-            <a
-              href="/images/glass1.jpeg"
-              target="_blank"
-            >
-              <img
-                src="/images/glass1.jpeg"
-                alt="Handcrafted stained glass artwork Sunshine Coast"
-                className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
-              />
-            </a>
-
-
-            <a
-              href="/images/glass2.jpg"
-              target="_blank"
-            >
-              <img
-                src="/images/glass2.jpg"
-                alt="Traditional stained glass repair work Queensland"
-                className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
-              />
-            </a>
-
-
-            <a
-              href="/images/glass3.jpg"
-              target="_blank"
-            >
-              <img
-                src="/images/glass3.jpg"
-                alt="Custom leadlight stained glass commission Queensland"
-                className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
-              />
-            </a>
-
-          </div>
+          <LightboxGallery />
 
         </section>
 
@@ -228,75 +139,37 @@ export default function Home() {
 
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-          <h2 className="text-4xl font-serif tracking-wide mb-12">
+          <h2 className="text-4xl font-serif mb-12">
             Collected Kind Words
           </h2>
-
 
           <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
             <div className="bg-white rounded-2xl shadow-md p-8">
-
-              <div className="text-[#D4A017] text-xl mb-4">
-                ★★★★★
-              </div>
-
+              <div className="text-[#D4A017] text-xl mb-4">★★★★★</div>
               <p className="italic mb-4">
-                “Absolutely stunning craftsmanship.
-                Our home feels transformed.”
+                “Absolutely stunning craftsmanship. Our home feels transformed.”
               </p>
-
-              <p className="text-sm text-gray-500">
-                Google Review
-              </p>
-
+              <p className="text-sm text-gray-500">Google Review</p>
             </div>
 
-
-
             <div className="bg-white rounded-2xl shadow-md p-8">
-
-              <div className="text-[#D4A017] text-xl mb-4">
-                ★★★★★
-              </div>
-
+              <div className="text-[#D4A017] text-xl mb-4">★★★★★</div>
               <p className="italic mb-4">
-                “An unforgettable workshop
-                experience.”
+                “An unforgettable workshop experience.”
               </p>
-
-              <p className="text-sm text-gray-500">
-                ClassBento Review
-              </p>
-
+              <p className="text-sm text-gray-500">ClassBento</p>
             </div>
 
-
-
             <div className="bg-white rounded-2xl shadow-md p-8">
-
-              <div className="text-[#D4A017] text-xl mb-4">
-                ★★★★★
-              </div>
-
+              <div className="text-[#D4A017] text-xl mb-4">★★★★★</div>
               <p className="italic mb-4">
-                “Beautiful artistry and
-                wonderful guidance.”
+                “Beautiful artistry and wonderful guidance.”
               </p>
-
-              <p className="text-sm text-gray-500">
-                Client Review
-              </p>
-
+              <p className="text-sm text-gray-500">Client Review</p>
             </div>
 
           </div>
-
-
-          <p className="mt-10 italic text-lg text-gray-700">
-            Trusted across Sunshine Coast,
-            Brisbane and beyond.
-          </p>
 
         </section>
 
@@ -305,25 +178,15 @@ export default function Home() {
         {/* NEWSLETTER */}
         <section className="py-24 text-center bg-[#EFE7D8]">
 
-          <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
-
-          <h2 className="text-4xl font-serif tracking-wide mb-4">
+          <h2 className="text-3xl font-serif mb-4">
             Join Our Mailing List
           </h2>
-
-          <p className="text-lg text-gray-700 max-w-xl mx-auto mb-8 leading-relaxed">
-            Receive workshop releases,
-            new stained glass works,
-            studio news and sparks of inspiration.
-          </p>
-
 
           <form
             action="https://formspree.io/f/xlgaalob"
             method="POST"
-            className="max-w-md mx-auto flex flex-col md:flex-row gap-4"
+            className="max-w-md mx-auto flex gap-4 flex-col md:flex-row"
           >
-
             <input
               type="email"
               name="email"
@@ -332,16 +195,9 @@ export default function Home() {
               className="flex-1 p-3 rounded-xl border"
             />
 
-            <input
-              type="hidden"
-              name="enquiryType"
-              value="Newsletter Signup"
-            />
-
             <button className="btn-primary">
               Subscribe
             </button>
-
           </form>
 
         </section>
@@ -350,26 +206,15 @@ export default function Home() {
 
         {/* FOOTER */}
         <footer className="py-12 text-center text-sm bg-[#EAE3D6]">
-
-          <p className="mb-2">
-            luminousbynature.com.au@gmail.com
-          </p>
-
-          <p className="mb-4">
-            0458 899 227
-          </p>
-
-          <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Luminous By Nature
-          </p>
-
+          <p>luminousbynature.com.au@gmail.com</p>
+          <p>0458 899 227</p>
         </footer>
 
       </main>
 
 
 
-      {/* FLOATING ENQUIRE BUTTON */}
+      {/* FLOATING CTA */}
       <a
         href="/commissions"
         className="fixed bottom-6 right-6 btn-primary shadow-lg z-50"
