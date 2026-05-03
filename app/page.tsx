@@ -10,7 +10,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto">
 
             <img
-              src="/images/hero.png"
+              src="/images/hero2.png"
               alt="Luminous By Nature stained glass Sunshine Coast"
               className="mx-auto mb-8 max-h-[60vh] object-contain"
             />
