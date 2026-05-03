@@ -14,7 +14,7 @@ const images = [
     desc: "Traditional repair"
   },
   {
-    src: "/images/glass3.jpg",
+    src: "/images/glass4.jpg",
     title: "Sacred Geometry",
     desc: "Custom commission"
   }
