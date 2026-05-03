@@ -96,3 +96,7 @@ transform:translateX(-30%) rotate(20deg);
 transform:translateX(30%) rotate(20deg);
 }
 }
+
+html, body {
+  overflow-x: hidden;
+}

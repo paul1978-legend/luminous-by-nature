@@ -1,4 +1,4 @@
-import LightboxGallery from "./components/Lightbox";
+import LightboxGallery from "@/app/components/Lightbox";
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
 
         {/* HERO */}
         <section className="min-h-screen flex items-center justify-center bg-[#1C1C1C] text-white px-6 py-24">
-          <div className="text-center max-w-3xl mx-auto fade-in">
+          <div className="text-center max-w-3xl mx-auto">
 
             <img
               src="/images/hero.png"
@@ -128,7 +128,7 @@ export default function Home() {
             Click a piece to explore.
           </p>
 
-          <LightboxGallery />
+          // <LightboxGallery />
 
         </section>
 

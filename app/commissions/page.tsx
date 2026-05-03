@@ -38,19 +38,19 @@ Featured Commissions
 <div className="grid md:grid-cols-3 gap-8">
 
 <img
-src="/images/glass1.jpeg"
+src="/images/commission1.jpg"
 alt="Botanical stained glass commission Sunshine Coast"
 className="glow rounded-2xl h-80 w-full object-cover hover:scale-105 transition duration-500"
 />
 
 <img
-src="/images/glass2.jpg"
+src="/images/commission2.jpg"
 alt="Decorative leadlight commission Brisbane"
 className="glow rounded-2xl h-80 w-full object-cover mt-10 hover:scale-105 transition duration-500"
 />
 
 <img
-src="/images/glass3.jpg"
+src="/images/commission3.jpg"
 alt="Custom handcrafted stained glass panel Queensland"
 className="glow rounded-2xl h-80 w-full object-cover mt-6 hover:scale-105 transition duration-500"
 />
