@@ -1,23 +1,52 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="w-full bg-[#1C1C1C] text-white px-6 py-4 flex justify-between items-center">
+    <nav className="w-full bg-[#1C1C1C] text-white px-4 py-4 flex justify-between items-center">
 
       <Link href="/" className="font-serif text-xl tracking-wide">
         Luminous By Nature
       </Link>
 
-      <div className="flex gap-8 text-sm items-center">
+      {/* 🍔 MOBILE BUTTON */}
+      <button
+        onClick={() => setOpen(!open)}
+        className="md:hidden text-2xl"
+      >
+        ☰
+      </button>
 
-        <Link href="/commissions" className="hover:text-[#D4A017]">Commissions</Link>
-        <Link href="/repairs" className="hover:text-[#D4A017]">Repairs</Link>
-        <Link href="/workshops" className="hover:text-[#D4A017]">Workshops</Link>
-        <Link href="/portfolio" className="hover:text-[#D4A017]">Portfolio</Link>
-        <Link href="/shop" className="hover:text-[#D4A017]">Collection</Link>
-        <Link href="/contact" className="hover:text-[#D4A017]">Contact</Link>
+      {/* DESKTOP MENU */}
+      <div className="hidden md:flex gap-6 text-sm items-center">
+
+        <Link href="/commissions">Commissions</Link>
+        <Link href="/repairs">Repairs</Link>
+        <Link href="/workshops">Workshops</Link>
+        <Link href="/portfolio">Portfolio</Link>
+        <Link href="/shop">Collection</Link>
+        <Link href="/contact">Contact</Link>
 
       </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="absolute top-16 left-0 w-full bg-[#1C1C1C] flex flex-col items-center gap-6 py-6 md:hidden z-50">
+
+          <Link href="/commissions" onClick={() => setOpen(false)}>Commissions</Link>
+          <Link href="/repairs" onClick={() => setOpen(false)}>Repairs</Link>
+          <Link href="/workshops" onClick={() => setOpen(false)}>Workshops</Link>
+          <Link href="/portfolio" onClick={() => setOpen(false)}>Portfolio</Link>
+          <Link href="/shop" onClick={() => setOpen(false)}>Collection</Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+
+        </div>
+      )}
 
     </nav>
   );
