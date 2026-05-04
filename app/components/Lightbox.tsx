@@ -6,12 +6,12 @@ import Image from "next/image";
 const images = [
   {
     src: "/images/glass1.jpeg",
-    title: "Botanical Panel",
+    title: "Custom Panels",
     desc: "Sunshine Coast Residence"
   },
   {
     src: "/images/glass2.jpg",
-    title: "Leadlight Restoration",
+    title: "Original Art",
     desc: "Traditional repair"
   },
   {
