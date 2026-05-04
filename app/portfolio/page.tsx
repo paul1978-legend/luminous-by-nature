@@ -40,23 +40,23 @@ export default function Portfolio() {
         light and story.
       </p>
 
-      {/* GRID */}
-      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      {/* PREMIUM MASONRY GRID */}
+      <div className="columns-1 md:columns-3 gap-6 max-w-6xl mx-auto space-y-6">
 
         {artworks.map((art) => (
           <Link key={art.slug} href={`/portfolio/${art.slug}`}>
-            
-            <div className="cursor-pointer">
+
+            <div className="overflow-hidden rounded-2xl break-inside-avoid cursor-pointer">
 
               <Image
                 src={art.src}
                 alt={art.title}
                 width={800}
                 height={600}
-                className="glow rounded-2xl h-80 w-full object-cover transition duration-500 hover:scale-105"
+                className="glow w-full object-cover hover:scale-105 transition duration-500"
               />
 
-              <p className="mt-3 text-sm italic text-gray-600">
+              <p className="mt-2 text-sm italic text-gray-600">
                 {art.title}
               </p>
 
