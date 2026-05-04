@@ -1,100 +1,129 @@
 import Image from "next/image";
 
 const artworks = {
-"sunburst-panel": {
-title: "Sunburst Panel",
-image: "/images/glass1.jpeg",
-description:
-"A radiant stained glass panel inspired by sunrise over the Sunshine Coast.",
-details: "Hand-cut glass, leadlight technique, 2025",
-status: "Available",
-priceLink: "https://buy.stripe.com/xxxxx
-", // 🔥 replace later
-},
+  "sunburst-panel": {
+    title: "Sunburst Panel",
+    image: "/images/glass1.jpeg",
+    description:
+      "A radiant stained glass panel inspired by sunrise over the Sunshine Coast.",
+    details: "Hand-cut glass, leadlight technique, 2025",
+    story:
+      "Inspired by early morning light spilling across the coast, this piece captures warmth, renewal and quiet energy.",
+    status: "Available",
+    price: "$480",
+    priceLink: "https://buy.stripe.com/xxxxx", // keep on ONE LINE
+  },
 
-"sacred-geometry": {
-title: "Sacred Geometry Panel",
-image: "/images/glass2.jpg",
-description:
-"A harmonious geometric design exploring balance, symmetry and light.",
-details: "Custom commission, 2024",
-status: "Sold",
-},
+  "sacred-geometry": {
+    title: "Sacred Geometry Panel",
+    image: "/images/glass2.jpg",
+    description:
+      "A harmonious geometric design exploring balance, symmetry and light.",
+    details: "Custom commission, 2024",
+    story:
+      "A study in balance and proportion, designed to bring stillness and clarity into the space.",
+    status: "Sold",
+  },
 };
 
 export default function ArtworkPage({
-params,
+  params,
 }: {
-params: { slug: string };
+  params: { slug: string };
 }) {
-const artwork = artworks[params.slug as keyof typeof artworks];
+  const artwork = artworks[params.slug as keyof typeof artworks];
 
-if (!artwork) {
-return (
-<div className="p-10 text-center">
-Artwork not found
-</div>
-);
-}
+  if (!artwork) {
+    return (
+      <div className="p-10 text-center">
+        Artwork not found
+      </div>
+    );
+  }
 
-return (
-<main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20">
+  return (
+    <main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20">
 
-  <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto">
 
-    {/* IMAGE */}
-    <Image
-      src={artwork.image}
-      alt={artwork.title}
-      width={1200}
-      height={800}
-      className="rounded-2xl mb-10 w-full object-cover glow"
-    />
+        {/* IMAGE */}
+        <Image
+          src={artwork.image}
+          alt={artwork.title}
+          width={1200}
+          height={800}
+          className="rounded-2xl mb-10 w-full object-cover glow"
+        />
 
-    {/* TITLE */}
-    <h1 className="text-4xl font-serif mb-4">
-      {artwork.title}
-    </h1>
+        {/* TITLE */}
+        <h1 className="text-4xl font-serif mb-4">
+          {artwork.title}
+        </h1>
 
-    {/* DESCRIPTION */}
-    <p className="text-gray-700 mb-6 leading-relaxed">
-      {artwork.description}
-    </p>
+        {/* STATUS BADGE */}
+        <div className="mb-4">
+          <span
+            className={`px-3 py-1 rounded-full text-sm ${
+              artwork.status === "Available"
+                ? "bg-green-100 text-green-700"
+                : "bg-gray-200 text-gray-600"
+            }`}
+          >
+            {artwork.status}
+          </span>
+        </div>
 
-    {/* DETAILS */}
-    <p className="text-sm text-gray-500 mb-6">
-      {artwork.details}
-    </p>
+        {/* PRICE */}
+        {artwork.price && (
+          <p className="text-xl font-semibold mb-6">
+            {artwork.price}
+          </p>
+        )}
 
-    {/* STATUS */}
-    <p className="mb-10 font-semibold">
-      Status: {artwork.status}
-    </p>
+        {/* DESCRIPTION */}
+        <p className="text-gray-700 mb-6 leading-relaxed">
+          {artwork.description}
+        </p>
 
-    {/* ACTION BUTTONS */}
-    <div className="flex gap-4 flex-wrap">
+        {/* STORY (premium feel) */}
+        {artwork.story && (
+          <div className="mb-10">
+            <h2 className="text-2xl font-serif mb-3">
+              The Story
+            </h2>
+            <p className="italic text-gray-700 leading-relaxed">
+              {artwork.story}
+            </p>
+          </div>
+        )}
 
-      {/* Enquiry always */}
-      <a href="/contact" className="btn-primary">
-        Enquire About This Piece
-      </a>
+        {/* DETAILS */}
+        <p className="text-sm text-gray-500 mb-10">
+          {artwork.details}
+        </p>
 
-      {/* Stripe only if available */}
-      {artwork.status === "Available" && artwork.priceLink && (
-        <a
-          href={artwork.priceLink}
-          target="_blank"
-          className="btn-primary"
-        >
-          Purchase This Piece
-        </a>
-      )}
+        {/* ACTION BUTTONS */}
+        <div className="flex gap-4 flex-wrap">
 
-    </div>
+          <a href="/contact" className="btn-primary">
+            Enquire About This Piece
+          </a>
 
-  </div>
+          {artwork.status === "Available" && artwork.priceLink && (
+            <a
+              href={artwork.priceLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Purchase This Piece
+            </a>
+          )}
 
-</main>
+        </div>
 
-);
+      </div>
+
+    </main>
+  );
 }
