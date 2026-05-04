@@ -100,3 +100,11 @@ transform:translateX(30%) rotate(20deg);
 html, body {
   overflow-x: hidden;
 }
+
+* {
+  max-width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}

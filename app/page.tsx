@@ -128,7 +128,7 @@ export default function Home() {
             Click a piece to explore.
           </p>
 
-          // <LightboxGallery />
+          {/* <LightboxGallery /> */}
 
         </section>
 
