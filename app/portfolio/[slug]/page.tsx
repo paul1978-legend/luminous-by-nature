@@ -1,6 +1,18 @@
 import Image from "next/image";
 
-const artworks = {
+/* ✅ DEFINE TYPE (THIS FIXES YOUR ERROR) */
+type Artwork = {
+  title: string;
+  image: string;
+  description: string;
+  details: string;
+  story: string;
+  status: "Available" | "Sold";
+  price?: string;       // ✅ optional
+  priceLink?: string;   // ✅ optional
+};
+
+const artworks: Record<string, Artwork> = {
   "sunburst-panel": {
     title: "Sunburst Panel",
     image: "/images/glass1.jpeg",
@@ -11,7 +23,7 @@ const artworks = {
       "Inspired by early morning light spilling across the coast, this piece captures warmth, renewal and quiet energy.",
     status: "Available",
     price: "$480",
-    priceLink: "https://buy.stripe.com/xxxxx", // keep on ONE LINE
+    priceLink: "https://buy.stripe.com/xxxxx",
   },
 
   "sacred-geometry": {
@@ -31,14 +43,16 @@ export default function ArtworkPage({
 }: {
   params: { slug: string };
 }) {
-  const artwork = artworks[params.slug as keyof typeof artworks];
+
+  /* ✅ EXACT LOCATION FOR THIS LINE */
+  if (!params?.slug) {
+    return <div className="p-10 text-center">Invalid page</div>;
+  }
+
+  const artwork = artworks[params.slug];
 
   if (!artwork) {
-    return (
-      <div className="p-10 text-center">
-        Artwork not found
-      </div>
-    );
+    return <div className="p-10 text-center">Artwork not found</div>;
   }
 
   return (
@@ -60,7 +74,7 @@ export default function ArtworkPage({
           {artwork.title}
         </h1>
 
-        {/* STATUS BADGE */}
+        {/* STATUS */}
         <div className="mb-4">
           <span
             className={`px-3 py-1 rounded-full text-sm ${
@@ -85,24 +99,22 @@ export default function ArtworkPage({
           {artwork.description}
         </p>
 
-        {/* STORY (premium feel) */}
-        {artwork.story && (
-          <div className="mb-10">
-            <h2 className="text-2xl font-serif mb-3">
-              The Story
-            </h2>
-            <p className="italic text-gray-700 leading-relaxed">
-              {artwork.story}
-            </p>
-          </div>
-        )}
+        {/* STORY */}
+        <div className="mb-10">
+          <h2 className="text-2xl font-serif mb-3">
+            The Story
+          </h2>
+          <p className="italic text-gray-700 leading-relaxed">
+            {artwork.story}
+          </p>
+        </div>
 
         {/* DETAILS */}
         <p className="text-sm text-gray-500 mb-10">
           {artwork.details}
         </p>
 
-        {/* ACTION BUTTONS */}
+        {/* BUTTONS */}
         <div className="flex gap-4 flex-wrap">
 
           <a href="/contact" className="btn-primary">
