@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-/* ✅ DEFINE TYPE (THIS FIXES YOUR ERROR) */
 type Artwork = {
   title: string;
   image: string;
@@ -8,8 +7,8 @@ type Artwork = {
   details: string;
   story: string;
   status: "Available" | "Sold";
-  price?: string;       // ✅ optional
-  priceLink?: string;   // ✅ optional
+  price?: string;
+  priceLink?: string;
 };
 
 const artworks: Record<string, Artwork> = {
@@ -43,8 +42,6 @@ export default function ArtworkPage({
 }: {
   params: { slug: string };
 }) {
-
-  /* ✅ EXACT LOCATION FOR THIS LINE */
   if (!params?.slug) {
     return <div className="p-10 text-center">Invalid page</div>;
   }
@@ -56,26 +53,29 @@ export default function ArtworkPage({
   }
 
   return (
-    <main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20">
+    <main className="bg-[#F5F1E8] text-[#1C1C1C]">
 
-      <div className="max-w-5xl mx-auto">
-
-        {/* IMAGE */}
+      {/* HERO IMAGE */}
+      <div className="w-full h-[70vh] relative overflow-hidden">
         <Image
           src={artwork.image}
           alt={artwork.title}
-          width={1200}
-          height={800}
-          className="rounded-2xl mb-10 w-full object-cover glow"
+          fill
+          priority
+          className="object-cover scale-100 hover:scale-105 transition duration-[4000ms] ease-out"
         />
+      </div>
+
+      {/* CONTENT */}
+      <section className="max-w-4xl mx-auto px-6 py-20">
 
         {/* TITLE */}
-        <h1 className="text-4xl font-serif mb-4">
+        <h1 className="text-4xl md:text-5xl font-serif mb-6">
           {artwork.title}
         </h1>
 
-        {/* STATUS */}
-        <div className="mb-4">
+        {/* STATUS + PRICE */}
+        <div className="flex gap-4 items-center mb-6 flex-wrap">
           <span
             className={`px-3 py-1 rounded-full text-sm ${
               artwork.status === "Available"
@@ -85,36 +85,38 @@ export default function ArtworkPage({
           >
             {artwork.status}
           </span>
+
+          {artwork.price && (
+            <span className="text-xl font-semibold">
+              {artwork.price}
+            </span>
+          )}
         </div>
 
-        {/* PRICE */}
-        {artwork.price && (
-          <p className="text-xl font-semibold mb-6">
-            {artwork.price}
-          </p>
-        )}
-
         {/* DESCRIPTION */}
-        <p className="text-gray-700 mb-6 leading-relaxed">
+        <p className="text-lg text-gray-700 leading-relaxed mb-10">
           {artwork.description}
         </p>
 
         {/* STORY */}
-        <div className="mb-10">
-          <h2 className="text-2xl font-serif mb-3">
+        <div className="mb-12">
+          <div className="w-12 h-[2px] bg-[#D4A017] mb-6"></div>
+
+          <h2 className="text-2xl font-serif mb-4">
             The Story
           </h2>
+
           <p className="italic text-gray-700 leading-relaxed">
             {artwork.story}
           </p>
         </div>
 
         {/* DETAILS */}
-        <p className="text-sm text-gray-500 mb-10">
+        <p className="text-sm text-gray-500 mb-12">
           {artwork.details}
         </p>
 
-        {/* BUTTONS */}
+        {/* ACTION */}
         <div className="flex gap-4 flex-wrap">
 
           <a href="/contact" className="btn-primary">
@@ -134,7 +136,7 @@ export default function ArtworkPage({
 
         </div>
 
-      </div>
+      </section>
 
     </main>
   );
