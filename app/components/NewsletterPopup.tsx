@@ -18,7 +18,6 @@ export default function NewsletterPopup() {
       }, 12000);
 
       return () => clearTimeout(timer);
-
     }
 
   }, []);
@@ -36,11 +35,11 @@ export default function NewsletterPopup() {
 
   return (
 
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-6">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
 
-      <div className="light-beam bg-[#F5F1E8] rounded-3xl shadow-2xl p-10 max-w-lg w-full text-center relative">
+      <div className="relative bg-[#F5F1E8] rounded-3xl shadow-2xl p-6 md:p-10 w-full max-w-2xl overflow-y-auto max-h-[90vh]">
 
-        {/* CLOSE */}
+        {/* CLOSE BUTTON */}
         <button
           onClick={closePopup}
           className="absolute top-4 right-5 text-xl text-gray-500 hover:text-black"
@@ -48,35 +47,16 @@ export default function NewsletterPopup() {
           ×
         </button>
 
-        {/* GOLD LINE */}
-        <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
-
-        {/* TITLE */}
-        <h2 className="text-3xl font-serif mb-4">
-          Join Our Studio Newsletter
-        </h2>
-
-        {/* TEXT */}
-        <p className="text-gray-700 leading-relaxed mb-8">
-          Be first to hear about new works,
-          upcoming workshops,
-          collector releases and studio inspirations.
-        </p>
-
         {/* MAILERLITE FORM */}
         <div
           className="ml-embedded"
           data-form="MqRJlj"
         ></div>
 
-        {/* FOOTNOTE */}
-        <p className="text-xs text-gray-500 mt-6">
-          No spam. Just light and occasional magic ✨
-        </p>
-
       </div>
 
     </div>
 
   );
+
 }
