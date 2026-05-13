@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0">
 
           <Image
-            src="/images/hero.png"
+            src="/images/hero2.png"
             alt="Luminous By Nature stained glass artwork"
             fill
             priority
