@@ -1,50 +1,62 @@
-import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Luminous Digital Studio",
-  description: "Websites and apps for small businesses",
+export const metadata = {
+  title: "Luminous By Nature | Stained Glass Sunshine Coast",
+  description:
+    "Handcrafted stained glass commissions, workshops and restorations across Sunshine Coast, Brisbane and South East Queensland.",
 };
 
 export default function Home() {
   return (
-    <main className="min-h-screen px-6 py-10 max-w-6xl mx-auto">
+    <main className="bg-[#F5F1E8] text-[#1C1C1C] overflow-x-hidden">
 
-      {/* Hero */}
-      <section className="relative overflow-hidden rounded-[2rem] border border-gray-200 bg-gradient-to-b from-white via-gray-50 to-white px-8 py-28 text-center mb-28 shadow-sm">
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center justify-center text-center px-6 overflow-hidden bg-[#111111]">
 
-        <div className="absolute inset-0 opacity-30 blur-3xl bg-gradient-to-r from-orange-100 via-pink-100 to-yellow-100"></div>
+        <div className="absolute inset-0">
 
-        <div className="relative z-10">
+          <Image
+            src="/images/hero.png"
+            alt="Luminous By Nature stained glass artwork"
+            fill
+            priority
+            className="object-cover opacity-40"
+          />
 
-          <p className="uppercase tracking-[0.35em] text-sm text-gray-500 mb-6">
-            Websites • Apps • Creative Digital Experiences
-          </p>
+        </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
-            Luminous
+        <div className="relative z-10 max-w-4xl fade-in">
+
+          <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+
+          <h1 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight tracking-wide">
+            Light,
             <br />
-            Digital Studio
+            Crafted by Nature
           </h1>
 
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12">
-            Beautiful websites and modern digital experiences crafted for small businesses, creatives, and ambitious ideas.
+          <p className="text-lg md:text-2xl text-gray-200 leading-relaxed max-w-2xl mx-auto mb-10">
+            Handcrafted stained glass commissions,
+            restorations and workshops inspired by light,
+            symbolism and timeless craftsmanship.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
 
-            <a
-              href="/contact"
-              className="px-8 py-4 rounded-2xl bg-black text-white hover:opacity-90 transition shadow-lg"
+            <Link
+              href="/commissions"
+              className="btn-primary"
             >
-              Start Your Project
-            </a>
+              Commission a Piece
+            </Link>
 
-            <a
-              href="#services"
-              className="px-8 py-4 rounded-2xl border border-gray-300 hover:bg-gray-100 transition"
+            <Link
+              href="/workshops"
+              className="border border-white text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition"
             >
-              View Services
-            </a>
+              View Workshops
+            </Link>
 
           </div>
 
@@ -52,105 +64,211 @@ export default function Home() {
 
       </section>
 
-      {/* Services */}
-      <section
-        id="services"
-        className="mb-28"
-      >
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Services
-        </h2>
 
-        <div className="grid gap-8 md:grid-cols-3">
+      {/* SERVICES */}
+      <section className="py-24 px-6 bg-[#EFE7D8]">
 
-          <div className="p-8 rounded-3xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold mb-4">
-              Website Builds
-            </h3>
+        <div className="max-w-6xl mx-auto">
 
-            <p className="text-gray-600 leading-relaxed">
-              Clean, modern websites designed to help your business stand out and convert visitors into customers.
+          <div className="text-center mb-20">
+
+            <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+
+            <h2 className="text-4xl font-serif mb-6">
+              Crafted With Intention
+            </h2>
+
+            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+              From custom commissions to stained glass workshops and traditional restorations,
+              each piece is designed to bring warmth, symbolism and atmosphere into your space.
             </p>
+
           </div>
 
-          <div className="p-8 rounded-3xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold mb-4">
-              Website Refreshes
-            </h3>
 
-            <p className="text-gray-600 leading-relaxed">
-              Transform outdated websites into polished, professional digital experiences.
-            </p>
-          </div>
+          <div className="grid md:grid-cols-3 gap-10">
 
-          <div className="p-8 rounded-3xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold mb-4">
-              App Prototypes
-            </h3>
+            <Link
+              href="/commissions"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
+            >
 
-            <p className="text-gray-600 leading-relaxed">
-              Functional app concepts and MVP experiences designed to bring ideas to life quickly.
-            </p>
+              <h3 className="text-2xl font-serif mb-4">
+                Commissions
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed">
+                Bespoke stained glass artworks crafted for homes,
+                sacred spaces and collectors across Sunshine Coast and Brisbane.
+              </p>
+
+            </Link>
+
+
+            <Link
+              href="/repairs"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
+            >
+
+              <h3 className="text-2xl font-serif mb-4">
+                Repairs
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed">
+                Traditional leadlight restoration and stained glass repairs
+                handled with care and respect for original craftsmanship.
+              </p>
+
+            </Link>
+
+
+            <Link
+              href="/workshops"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
+            >
+
+              <h3 className="text-2xl font-serif mb-4">
+                Workshops
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed">
+                Hands-on stained glass workshops where creativity,
+                craftsmanship and community come together.
+              </p>
+
+            </Link>
+
           </div>
 
         </div>
 
       </section>
 
-      {/* Offer */}
-      <section className="mb-28 text-center">
 
-        <h2 className="text-3xl font-bold mb-6">
-          Starter Website Package
-        </h2>
+      {/* FEATURED GALLERY */}
+      <section className="py-24 px-6">
 
-        <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
-          A clean, professional one-page website designed to get your business online quickly and confidently.
-        </p>
+        <div className="text-center mb-16">
 
-        <div className="max-w-xl mx-auto rounded-3xl border border-gray-200 p-10 shadow-sm bg-white">
+          <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-          <ul className="space-y-4 text-left text-gray-700 mb-10">
+          <h2 className="text-4xl font-serif mb-6">
+            Featured Works
+          </h2>
 
-            <li>✓ Mobile-friendly design</li>
-            <li>✓ Contact form</li>
-            <li>✓ Modern layout</li>
-            <li>✓ Launch support</li>
-
-          </ul>
-
-          <p className="text-4xl font-bold mb-6">
-            $750
+          <p className="italic text-lg text-gray-700">
+            Light transformed into story, colour and atmosphere.
           </p>
 
-          <a
-            href="/contact"
-            className="inline-block px-8 py-4 rounded-2xl bg-black text-white hover:opacity-90 transition"
-          >
-            Enquire Now
-          </a>
+        </div>
+
+
+        <div className="columns-1 md:columns-3 gap-6 max-w-6xl mx-auto space-y-6">
+
+          <Link href="/portfolio/sunburst-panel">
+
+            <div className="overflow-hidden rounded-2xl break-inside-avoid mb-6">
+
+              <Image
+                src="/images/glass1.jpeg"
+                alt="Custom stained glass artwork"
+                width={800}
+                height={1000}
+                className="glow w-full object-cover hover:scale-105 transition duration-500"
+              />
+
+            </div>
+
+          </Link>
+
+
+          <Link href="/portfolio/sacred-geometry">
+
+            <div className="overflow-hidden rounded-2xl break-inside-avoid mb-6">
+
+              <Image
+                src="/images/glass2.jpg"
+                alt="Sacred geometry stained glass artwork"
+                width={800}
+                height={1200}
+                className="glow w-full object-cover hover:scale-105 transition duration-500"
+              />
+
+            </div>
+
+          </Link>
+
+
+          <Link href="/portfolio/leadlight-restoration">
+
+            <div className="overflow-hidden rounded-2xl break-inside-avoid mb-6">
+
+              <Image
+                src="/images/glass3.jpg"
+                alt="Traditional stained glass restoration"
+                width={800}
+                height={900}
+                className="glow w-full object-cover hover:scale-105 transition duration-500"
+              />
+
+            </div>
+
+          </Link>
 
         </div>
 
       </section>
+
+
+      {/* NEWSLETTER */}
+      <section className="py-24 px-6 bg-[#EFE7D8] text-center">
+
+        <div className="max-w-3xl mx-auto">
+
+          <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+
+          <h2 className="text-4xl font-serif mb-6">
+            Join Our Studio Newsletter
+          </h2>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-10">
+            Be first to hear about workshops,
+            new artworks, collector releases and studio inspirations.
+          </p>
+
+          <div
+            className="ml-embedded"
+            data-form="MqRJlj"
+          ></div>
+
+        </div>
+
+      </section>
+
 
       {/* CTA */}
-      <section className="text-center pb-20">
+      <section className="py-24 px-6 text-center">
 
-        <h2 className="text-4xl font-bold mb-6">
-          Let’s Build Something Great
-        </h2>
+        <div className="max-w-4xl mx-auto">
 
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
-          Ready to bring your business online or elevate your current digital presence?
-        </p>
+          <h2 className="text-5xl font-serif mb-8">
+            Let’s Create Something Timeless
+          </h2>
 
-        <a
-          href="/contact"
-          className="inline-block px-10 py-4 rounded-2xl bg-black text-white hover:opacity-90 transition shadow-lg"
-        >
-          Get In Touch
-        </a>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-10">
+            Whether you're seeking a custom stained glass commission,
+            restoration work or a creative workshop experience,
+            we'd love to hear from you.
+          </p>
+
+          <Link
+            href="/contact"
+            className="btn-primary"
+          >
+            Get In Touch
+          </Link>
+
+        </div>
 
       </section>
 
