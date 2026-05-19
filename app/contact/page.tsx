@@ -1,29 +1,73 @@
+export const metadata = {
+  title: "Contact | Luminous By Nature",
+  description:
+    "Contact Luminous By Nature for stained glass commissions, repairs and workshops.",
+};
+
 export default function Contact() {
-return (
-<main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20 text-center">
+  return (
+    <main className="bg-[#F5F1E8] text-[#1C1C1C] px-6 py-20 text-center">
 
-<div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
+      <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
-<h1 className="text-4xl font-serif mb-6">
-Contact
-</h1>
+      <h1 className="text-4xl font-serif mb-6">
+        Contact
+      </h1>
 
-<p className="mb-10 max-w-xl mx-auto leading-relaxed">
-Reach out for commissions,
-repairs or workshop enquiries.
+      <p className="mb-10 max-w-xl mx-auto leading-relaxed">
+        Reach out for commissions,
+        repairs or workshop enquiries.
 
-Serving Sunshine Coast,
-Brisbane and South East Queensland.
-</p>
+        <br /><br />
 
-<p>
-luminousbynature.com.au@gmail.com
-</p>
+        Serving Sunshine Coast,
+        Brisbane and South East Queensland.
+      </p>
 
-<p>
-0458 899 227
-</p>
+      <div className="space-y-4 text-lg">
 
-</main>
-);
+        <p>
+          luminousbynature.com.au@gmail.com
+        </p>
+
+        <p>
+          0458 899 227
+        </p>
+
+        <p>
+          Sunshine Coast, Queensland
+        </p>
+
+        <p>
+          ABN: XX XXX XXX XXX
+        </p>
+
+      </div>
+
+
+      {/* SOCIALS */}
+      <div className="flex gap-6 justify-center mt-10 text-sm">
+
+        <a
+          href="YOUR_INSTAGRAM_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#D4A017]"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="YOUR_FACEBOOK_LINK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#D4A017]"
+        >
+          Facebook
+        </a>
+
+      </div>
+
+    </main>
+  );
 }

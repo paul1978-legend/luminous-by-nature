@@ -163,7 +163,7 @@ export default function Home() {
         </div>
 
 
-        <div className="columns-1 md:columns-3 gap-6 max-w-6xl mx-auto space-y-6">
+        <div className="columns-1 md:columns-3 gap-6 max-w-6xl mx-auto space-y-6 px-2">
 
           <Link href="/portfolio/sunburst-panel">
 
@@ -271,6 +271,32 @@ export default function Home() {
         </div>
 
       </section>
+
+
+{/* FOOTER */}
+<footer className="py-10 px-6 bg-[#EFE7D8] text-center">
+
+  <p className="text-sm text-gray-600 mb-6">
+    © {new Date().getFullYear()} Luminous By Nature
+  </p>
+
+  <div className="flex flex-wrap gap-6 justify-center text-sm text-gray-700">
+
+    <Link href="/privacy-policy">
+      Privacy Policy
+    </Link>
+
+    <Link href="/terms-and-conditions">
+      Terms & Conditions
+    </Link>
+
+    <Link href="/refund-policy">
+      Refund Policy
+    </Link>
+
+  </div>
+
+</footer>
 
     </main>
   );
