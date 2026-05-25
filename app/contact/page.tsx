@@ -39,34 +39,42 @@ export default function Contact() {
         </p>
 
         <p>
-          ABN: XX XXX XXX XXX
+          ABN: 11 893 978 849
         </p>
 
       </div>
 
 
-      {/* SOCIALS */}
-      <div className="flex gap-6 justify-center mt-10 text-sm">
+      <div className="flex gap-6 justify-center mt-10 text-sm flex-wrap">
 
-        <a
-          href="YOUR_INSTAGRAM_LINK"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#D4A017]"
-        >
-          Instagram
-        </a>
+  <a
+    href="https://www.instagram.com/luminous_bynature/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#D4A017]"
+  >
+    Instagram
+  </a>
 
-        <a
-          href="YOUR_FACEBOOK_LINK"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-[#D4A017]"
-        >
-          Facebook
-        </a>
+  <a
+    href="https://www.facebook.com/LuminousByNature"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#D4A017]"
+  >
+    Facebook
+  </a>
 
-      </div>
+  <a
+    href="https://www.youtube.com/@luminousbynature9184"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#D4A017]"
+  >
+    YouTube
+  </a>
+
+</div>
 
     </main>
   );
