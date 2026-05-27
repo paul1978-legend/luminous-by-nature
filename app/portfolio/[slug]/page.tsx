@@ -95,7 +95,14 @@ export default function ArtworkPage({
           alt={artwork.title}
           fill
           priority
-          className="object-cover scale-100 hover:scale-105 transition duration-[4000ms] ease-out"
+          className="
+object-cover
+artwork-hero
+hover:scale-105
+transition
+duration-[4000ms]
+ease-out
+"
         />
       </div>
 
@@ -128,11 +135,11 @@ export default function ArtworkPage({
         <div className="flex gap-4 items-center mb-6 flex-wrap">
 
           {artwork.status === "Available" ? (
-            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+  <span className="bg-emerald-100 text-emerald-700 shadow-sm px-3 py-1 rounded-full text-sm">
               Available
             </span>
           ) : (
-            <span className="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm">
+            <span className="bg-stone-200 text-stone-700 shadow-sm px-3 py-1 rounded-full text-sm">
               Sold
             </span>
           )}
@@ -151,7 +158,7 @@ export default function ArtworkPage({
         </p>
 
         {/* STORY */}
-        <div className="mb-12">
+        <div className="mb-12 story-panel p-8 rounded-2xl">
 
           <div className="w-12 h-[2px] bg-[#D4A017] mb-6"></div>
 
@@ -174,9 +181,9 @@ export default function ArtworkPage({
         <div className="flex gap-4 flex-wrap">
 
           <a
-            href="/contact"
-            className="btn-primary"
-          >
+  href={`/contact?artwork=${artwork.title}`}
+  className="btn-primary"
+>
             Enquire About This Piece
           </a>
 
@@ -193,6 +200,21 @@ export default function ArtworkPage({
             )}
 
         </div>
+
+        <div className="border-t pt-12 mt-20 text-center">
+
+  <p className="text-gray-500 mb-4">
+    Continue Exploring
+  </p>
+
+  <a
+    href="/portfolio"
+    className="btn-primary"
+  >
+    View Full Collection
+  </a>
+
+</div>
 
       </section>
 
