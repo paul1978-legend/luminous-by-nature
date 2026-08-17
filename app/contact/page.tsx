@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Contact | Luminous By Nature",
   description:
-    "Contact Luminous By Nature for stained glass commissions, repairs and workshops.",
+    "Contact Luminous By Nature for public and private stained glass workshop enquiries.",
 };
 
 export default function Contact() {
@@ -15,8 +15,8 @@ export default function Contact() {
       </h1>
 
       <p className="mb-10 max-w-xl mx-auto leading-relaxed">
-        Reach out for commissions,
-        repairs or workshop enquiries.
+        Reach out for public workshop questions,
+        or to enquire about a private workshop for your group.
 
         <br /><br />
 

@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luminous By Nature | Stained Glass Sunshine Coast",
+  title: "Luminous By Nature | Stained Glass Workshops Sunshine Coast & Brisbane",
   description:
-    "Custom stained glass commissions, leadlight repairs and stained glass workshops across Sunshine Coast, Brisbane and South East Queensland.",
+    "Small-group stained glass workshops across Sunshine Coast, Brisbane and South East Queensland. Public, private and mobile workshops — maximum 8 participants.",
   keywords: [
-    "stained glass Sunshine Coast",
-    "stained glass Brisbane",
-    "leadlight repairs Queensland",
-    "stained glass workshops",
-    "custom stained glass commissions",
-    "Sunshine Coast artist",
+    "stained glass workshops Sunshine Coast",
+    "stained glass workshops Brisbane",
+    "stained glass classes Queensland",
+    "private stained glass workshop",
+    "copper foiling workshop",
+    "creative workshops Sunshine Coast",
   ],
 };
 

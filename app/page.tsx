@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Luminous By Nature | Stained Glass Sunshine Coast",
+  title: "Luminous By Nature | Stained Glass Workshops Sunshine Coast & Brisbane",
   description:
-    "Handcrafted stained glass commissions, workshops and restorations across Sunshine Coast, Brisbane and South East Queensland.",
+    "Hands-on stained glass workshops across Sunshine Coast, Brisbane and South East Queensland. Small groups, maximum 8 participants, create something beautiful with your own hands.",
 };
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 
           <Image
             src="/images/hero2.png"
-            alt="Luminous By Nature stained glass artwork"
+            alt="Luminous By Nature stained glass workshop"
             fill
             priority
             className="object-cover opacity-40"
@@ -31,31 +31,31 @@ export default function Home() {
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
           <h1 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight tracking-wide">
-            Light,
+            Stained Glass
             <br />
-            Crafted by Nature
+            Workshops
           </h1>
 
           <p className="text-lg md:text-2xl text-gray-200 leading-relaxed max-w-2xl mx-auto mb-10">
-            Handcrafted stained glass commissions,
-            restorations and workshops inspired by light,
-            symbolism and timeless craftsmanship.
+            Create something beautiful with your own hands.
+            Small, hands-on workshops across the Sunshine Coast
+            and Brisbane — maximum 8 participants per session.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
 
             <Link
-              href="/commissions"
+              href="/workshops"
               className="btn-primary"
             >
-              Commission a Piece
+              View Workshops
             </Link>
 
             <Link
-              href="/workshops"
+              href="/private-workshops"
               className="border border-white text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition"
             >
-              View Workshops
+              Private Workshops
             </Link>
 
           </div>
@@ -75,12 +75,12 @@ export default function Home() {
             <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
             <h2 className="text-4xl font-serif mb-6">
-              Crafted With Intention
+              Choose Your Experience
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              From custom commissions to stained glass workshops and traditional restorations,
-              each piece is designed to bring warmth, symbolism and atmosphere into your space.
+              Whether you're joining a scheduled class or bringing your own group,
+              every workshop is small, hands-on and guided every step of the way.
             </p>
 
           </div>
@@ -89,51 +89,51 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-10">
 
             <Link
-              href="/commissions"
-              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
-            >
-
-              <h3 className="text-2xl font-serif mb-4">
-                Commissions
-              </h3>
-
-              <p className="text-gray-700 leading-relaxed">
-                Bespoke stained glass artworks crafted for homes,
-                sacred spaces and collectors across Sunshine Coast and Brisbane.
-              </p>
-
-            </Link>
-
-
-            <Link
-              href="/repairs"
-              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
-            >
-
-              <h3 className="text-2xl font-serif mb-4">
-                Repairs
-              </h3>
-
-              <p className="text-gray-700 leading-relaxed">
-                Traditional leadlight restoration and stained glass repairs
-                handled with care and respect for original craftsmanship.
-              </p>
-
-            </Link>
-
-
-            <Link
               href="/workshops"
               className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
             >
 
               <h3 className="text-2xl font-serif mb-4">
-                Workshops
+                Public Workshops
               </h3>
 
               <p className="text-gray-700 leading-relaxed">
-                Hands-on stained glass workshops where creativity,
-                craftsmanship and community come together.
+                Book an upcoming scheduled workshop and create your own
+                piece alongside a small group of fellow beginners.
+              </p>
+
+            </Link>
+
+
+            <Link
+              href="/private-workshops"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
+            >
+
+              <h3 className="text-2xl font-serif mb-4">
+                Private Workshops
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed">
+                Birthdays, hens celebrations, friends and small groups —
+                a workshop arranged just for you, up to 8 participants.
+              </p>
+
+            </Link>
+
+
+            <Link
+              href="/about"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-500"
+            >
+
+              <h3 className="text-2xl font-serif mb-4">
+                Meet Your Hosts
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed">
+                Get to know Paul and Sheree, and why they love
+                introducing people to the craft of stained glass.
               </p>
 
             </Link>
@@ -153,11 +153,11 @@ export default function Home() {
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
           <h2 className="text-4xl font-serif mb-6">
-            Featured Works
+            What You Could Create
           </h2>
 
           <p className="italic text-lg text-gray-700">
-            Light transformed into story, colour and atmosphere.
+            A glimpse of the kind of pieces our workshop participants take home.
           </p>
 
         </div>
@@ -165,13 +165,13 @@ export default function Home() {
 
         <div className="columns-1 md:columns-3 gap-6 max-w-6xl mx-auto space-y-6 px-2">
 
-          <Link href="/portfolio/sunburst-panel">
+          <Link href="/portfolio">
 
             <div className="overflow-hidden rounded-2xl break-inside-avoid mb-6">
 
               <Image
                 src="/images/glass1.jpeg"
-                alt="Custom stained glass artwork"
+                alt="Copper foil stained glass piece made in a workshop"
                 width={800}
                 height={1000}
                 className="glow w-full object-cover hover:scale-105 transition duration-500"
@@ -182,13 +182,13 @@ export default function Home() {
           </Link>
 
 
-          <Link href="/portfolio/sacred-geometry">
+          <Link href="/portfolio">
 
             <div className="overflow-hidden rounded-2xl break-inside-avoid mb-6">
 
               <Image
                 src="/images/glass2.jpg"
-                alt="Sacred geometry stained glass artwork"
+                alt="Sacred geometry stained glass piece made in a workshop"
                 width={800}
                 height={1200}
                 className="glow w-full object-cover hover:scale-105 transition duration-500"
@@ -199,13 +199,13 @@ export default function Home() {
           </Link>
 
 
-          <Link href="/portfolio/leadlight-restoration">
+          <Link href="/workshops">
 
             <div className="overflow-hidden rounded-2xl break-inside-avoid mb-6">
 
               <Image
-                src="/images/glass3.jpg"
-                alt="Traditional stained glass restoration"
+                src="/images/workshop1.jpg"
+                alt="Stained glass workshop in progress"
                 width={800}
                 height={900}
                 className="glow w-full object-cover hover:scale-105 transition duration-500"
@@ -232,8 +232,8 @@ export default function Home() {
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-10">
-            Be first to hear about workshops,
-            new artworks, collector releases and studio inspirations.
+            Be first to hear about new workshop dates,
+            private group availability and studio news.
           </p>
 
           <div
@@ -252,13 +252,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
 
           <h2 className="text-5xl font-serif mb-8">
-            Let’s Create Something Timeless
+            Find Your Next Creative Experience
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-10">
-            Whether you're seeking a custom stained glass commission,
-            restoration work or a creative workshop experience,
-            we'd love to hear from you.
+            Whether you're booking a public class or planning a private
+            workshop for your group, we'd love to hear from you.
           </p>
 
           <Link
