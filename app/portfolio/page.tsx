@@ -2,26 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Stained Glass Portfolio Sunshine Coast",
+  title: "Gallery | Luminous By Nature Stained Glass Workshops",
   description:
-    "Explore handcrafted stained glass commissions, repairs and artworks.",
+    "A gallery of copper foil stained glass pieces created in Luminous By Nature workshops.",
 };
 
 const artworks = [
   {
-    slug: "sunburst-panel",
     src: "/images/glass1.jpeg",
     title: "Sunburst Panel",
   },
   {
-    slug: "sacred-geometry",
     src: "/images/glass2.jpg",
     title: "Sacred Geometry",
-  },
-  {
-    slug: "leadlight-restoration",
-    src: "/images/glass3.jpg",
-    title: "Leadlight Restoration",
   },
 ];
 
@@ -35,73 +28,56 @@ export default function Portfolio() {
         <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
         <h1 className="text-4xl md:text-5xl font-serif tracking-wide mb-6">
-          Portfolio
+          Gallery
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed">
-          A collection of stained glass works crafted with intention,
-          light, story and timeless craftsmanship.
+          A glimpse of the copper foil stained glass pieces created
+          in our workshops — light, colour and craftsmanship.
         </p>
 
       </section>
 
-      {/* PREMIUM MASONRY GALLERY */}
+      {/* GALLERY */}
       <section className="px-6 pb-24">
 
         <div className="columns-1 md:columns-2 xl:columns-3 gap-6 max-w-7xl mx-auto space-y-6">
 
           {artworks.map((art) => (
-            <Link
-              key={art.slug}
-              href={`/portfolio/${art.slug}`}
-              className="block"
+            <div
+              key={art.title}
+              className="artwork-card break-inside-avoid mb-6"
             >
 
-              <div className="artwork-card break-inside-avoid mb-6 group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl shadow-md">
 
-                <div className="overflow-hidden rounded-2xl shadow-md">
-
-                  <Image
-                    src={art.src}
-                    alt={art.title}
-                    width={1200}
-                    height={900}
-                    loading="lazy"
-                    className="
-                      glow
-                      float-light
-                      w-full
-                      object-cover
-                      transition-all
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
-
-                </div>
-
-                <div className="pt-4">
-
-                  <p className="text-lg font-serif">
-                    {art.title}
-                  </p>
-
-                  <p className="text-sm italic text-gray-600 mt-1">
-                    View Artwork →
-                  </p>
-
-                </div>
+                <Image
+                  src={art.src}
+                  alt={art.title}
+                  width={1200}
+                  height={900}
+                  loading="lazy"
+                  className="glow float-light w-full object-cover"
+                />
 
               </div>
 
-            </Link>
+              <div className="pt-4">
+
+                <p className="text-lg font-serif">
+                  {art.title}
+                </p>
+
+              </div>
+
+            </div>
           ))}
 
         </div>
 
       </section>
 
-      {/* COLLECTOR CTA */}
+      {/* WORKSHOPS CTA */}
       <section className="bg-[#EFE7D8] py-24 px-6 text-center">
 
         <div className="max-w-3xl mx-auto">
@@ -109,20 +85,19 @@ export default function Portfolio() {
           <div className="w-12 h-[2px] bg-[#D4A017] mx-auto mb-6"></div>
 
           <h2 className="text-3xl md:text-4xl font-serif mb-6">
-            Looking For A Custom Piece?
+            Want To Create Something Like This?
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-10">
-            Commission a unique stained glass artwork designed
-            specifically for your home, studio, business or
-            sacred space.
+            Join one of our hands-on stained glass workshops and take
+            home a piece you made yourself.
           </p>
 
           <Link
-            href="/commissions"
+            href="/workshops"
             className="btn-primary"
           >
-            Start A Commission
+            View Workshops
           </Link>
 
         </div>
