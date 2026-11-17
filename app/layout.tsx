@@ -43,13 +43,6 @@ export default function RootLayout({
 
       <body className="min-h-full flex flex-col">
 
-        {/* Google AdSense */}
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4964811819591438"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
-
         {/* MailerLite */}
         <Script id="mailerlite" strategy="afterInteractive">
           {`
