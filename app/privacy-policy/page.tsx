@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
 
           <p>
             We may collect information you provide through contact forms,
-            newsletter signups, workshop bookings and commission enquiries.
+            newsletter signups and workshop bookings and enquiries.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
 
           <p>
             Your information is used only for communication,
-            workshop administration, commission enquiries,
+            workshop administration, responding to enquiries,
             newsletters and improving our services.
           </p>
         </div>
@@ -45,8 +45,8 @@ export default function PrivacyPolicy() {
           </h2>
 
           <p>
-            We may use trusted third-party services including Stripe,
-            MailerLite, Google Analytics and ClassBento.
+            We use trusted third-party services including MailerLite
+            (newsletter) and ClassBento (workshop bookings).
           </p>
         </div>
 

@@ -24,21 +24,11 @@ export default function RefundPolicy() {
 
         <div>
           <h2 className="text-2xl font-serif mb-3">
-            Custom Commissions
+            Questions
           </h2>
 
           <p>
-            Deposits for custom commissions are generally non-refundable once design work has commenced.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-serif mb-3">
-            Damaged Items
-          </h2>
-
-          <p>
-            If an artwork arrives damaged, please contact us promptly so we can assist with repair or replacement options.
+            If you need to change or cancel a booking, please get in touch via our Contact page as early as you can.
           </p>
         </div>
 

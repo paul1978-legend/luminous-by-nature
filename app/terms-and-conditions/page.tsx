@@ -18,23 +18,14 @@ export default function TermsConditions() {
 
         <div>
           <h2 className="text-2xl font-serif mb-3">
-            Commissions
-          </h2>
-
-          <p>
-            Custom stained glass commissions are handcrafted artworks.
-            Final appearance may vary slightly due to the handmade nature of the process.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-serif mb-3">
             Workshops
           </h2>
 
           <p>
             Workshop bookings may be subject to venue changes,
             minimum participant numbers and safety requirements.
+            Workshops are limited to a maximum of 8 participants.
+            Pieces made in a workshop are handmade, so each one will differ slightly.
           </p>
         </div>
 
